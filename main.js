@@ -114,16 +114,15 @@ function drawScene(gl, programInfo, buffers) {
         zFar
     );
 
-    // Set the drawing position to the "identity" point, which is
-    // the center of the scene.
+    // Set the drawing position to the "identity" point, which is the center of the scene.
     const modelViewMatrix = mat4.create();
 
     // Now move the drawing position a bit to where we want to start drawing the square.
     mat4.translate(
-        modelViewMatrix,     // destination matrix
-        modelViewMatrix,     // matrix to translate
-        [-0.0, 0.0, -6.0]
-    );  // amount to translate
+        modelViewMatrix,    // destination matrix
+        modelViewMatrix,    // matrix to translate
+        [-0.0, 0.0, -6.0]   // amount to translate
+    );
 
     // Tell WebGL how to pull out the positions from the position buffer into the vertexPosition attribute.
     {
