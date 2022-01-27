@@ -1,8 +1,6 @@
 #include <iostream>
 
-using namespace std;
-
 int main() {
-    cout << "Voxel Tetris" << endl;
+    printf("Lol");
     return 0;
 }
